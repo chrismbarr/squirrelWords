@@ -81,7 +81,19 @@ var subs = [
 	["Squirrel", "Tallefjant"],
 	["Banana", "Gulebøy"],
 	["Shark", "Kjempetorsk"],
-	["Toilet paper", "Rumpekrafs"]
+	["Toilet paper", "Rumpekrafs"],
+	["Google", "Gurgle"],
+	["Amazon", "Barnes & Noble"],
+	["Computer","Compy 386"],
+	["Bitcoin", "Monopoly Money"],
+	["Facebook", "Friendster"],
+	["Email", "Fax"],
+	["Phone", "Telegram"],
+	["Barack Obama", "Boruk Obormo"],
+	["President", "Glorious Leader"],
+	["CEO", "Support Technician"],
+	["Obama", "Orbomo"],
+	["Internet", "Butterfly Net"]
 ]
 
 walk(document.body);
