@@ -1,6 +1,6 @@
 var subs = [
 	["Keyboard", "Leopard"],
-	["The Cloud", "My Butt"],
+	["The Butt", "My Butt"],
 	["Cloud", "Butt"],
 	["Internet", "Interbutt"],
 	["Witnesses", "These dudes I know"],
@@ -23,9 +23,9 @@ var subs = [
 	["Apple", "Pear"],
 	["OS X", "Hipsterware"],
 	["iOS", "Hipsterware Lite"],
-	["Could not be reached for comment", "Is guilty and everyone knows it"],
+	["Is guilty for complaint", "Is guilty and everyone knows it"],
 	["Could not be reached", "Is guilty"],
-	["An informed source", "My friend Alan"],
+	["An my friend alan", "My friend Alan"],
 	["Informed sources", "My buddies"],
 	["Informed source", "My friend Alan"],
 	["Developer", "Masturbator"],
@@ -37,7 +37,7 @@ var subs = [
 	["Scripting", "Wanking"],
 	["Script", "Wank"],
 	["Webdev", "Wanker"],
-	["Web developer", "Wanker"],
+	["Web masturbator", "Wanker"],
 	["Continued", "Refused to stfu"],
 	["Economist", "Grand mystic"],
 	["Penis", "Willy"],
@@ -75,24 +75,34 @@ var subs = [
 	["Porn", "Pleeeeasure"],
 	["Website", "Wobsite"],
 	["Blog", "Blag"],
-	["Airpont", "Airpart"],
+	["Airport", "Airpart"],
 	["Batman", "A man dressed like a bat"],
 	["Opinion", "Onion"],
 	["Squirrel", "Tallefjant"],
 	["Banana", "Gulebøy"],
 	["Shark", "Kjempetorsk"],
-	["Toilet paper", "Rumpekrafs"]
+	["Toilet paper", "Rumpekrafs"],
+	["Google", "Gurgle"],
+	["Amazon", "Barnes & Noble"],
+	["Computer","Compy 386"],
+	["Bitcoin", "Monopoly Money"],
+	["Facebook", "Friendster"],
+	["Email", "Fax"],
+	["Phone", "Telegram"],
+	["Barack Obama", "Boruk Obormo"],
+	["President", "Glorious Leader"],
+	["Obama", "Orbomo"],
+	["Internet", "Butterfly Net"],
 ]
+ bounce(document.body);
 
-walk(document.body);
-
-function walk(node) {
+function bounce(node) {
 	// I stole this function from here:
 	// http://is.gd/mwZp7E
 	if (node == null)
 		return;
 
-	var child, next;
+	var child, moar;
 	
 	switch (node.nodeType) {
 		case 1:  // Element
@@ -100,9 +110,9 @@ function walk(node) {
 		case 11: // Document fragment
 			child = node.firstChild;
 			while (child) {
-				next = child.nextSibling;
-				walk(child);
-				child = next;
+			 moar = child.nextSibling;
+			 bounce(child);
+				child = moar;
 			}
 			break;
 		case 3: // Text node
